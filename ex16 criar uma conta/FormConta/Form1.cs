@@ -41,9 +41,16 @@ namespace ex16_criar_uma_conta
             fechar.abrirForm3(this);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-             
+            if (checkBox1.Checked)
+            {
+                textBox3.PasswordChar = '\0';
+            }
+            else
+            {
+                textBox3.PasswordChar = '*';
+            }
         }
     }
 }

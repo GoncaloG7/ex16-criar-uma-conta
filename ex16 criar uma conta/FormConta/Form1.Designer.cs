@@ -38,26 +38,26 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            button4 = new Button();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(90, 66);
+            textBox1.Location = new Point(94, 66);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(90, 120);
+            textBox2.Location = new Point(94, 120);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(90, 173);
+            textBox3.Location = new Point(94, 173);
             textBox3.Name = "textBox3";
             textBox3.PasswordChar = '*';
             textBox3.Size = new Size(100, 23);
@@ -130,22 +130,22 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // button4
+            // checkBox1
             // 
-            button4.Location = new Point(187, 173);
-            button4.Name = "button4";
-            button4.Size = new Size(26, 23);
-            button4.TabIndex = 10;
-            button4.Text = "👁";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(175, 177);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(15, 14);
+            checkBox1.TabIndex = 10;
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(334, 314);
-            Controls.Add(button4);
+            Controls.Add(checkBox1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -175,6 +175,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private Button button4;
+        private CheckBox checkBox1;
     }
 }
